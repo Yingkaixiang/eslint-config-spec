@@ -18,10 +18,20 @@
 ## vscode 默认配置解释
 
 ```js
-// 关闭 vscode 默认的 js 代码校验
 {
-  javascript.validate.enable: false
+  // eslint 默认不会识别 vue ts 需要手动配置
+  "eslint.validate": { /* code */ },
+  // 关闭 vscode 默认的 js 代码校验
+  "javascript.validate.enable": false,
+  // 关闭 vetur 的格式化功能
+  "vetur.format.enable": false,
+  // 关闭 vetur 默认的模板检验规则
+  "vetur.validation.template": false,
 }
 ```
 
 no-invalid-regexp
+
+## 坑
+
+`eslint-plugin-vue` 以及 `vue-eslint-parser` 必须安装 5.x 版本，否则部分规则会出现校验错误。
