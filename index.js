@@ -1,6 +1,6 @@
 // javascript 规则
 module.exports = {
-  extends: ['./base.js', './prettier.js'],
+  extends: ['./base.js'],
   rules: {
     /**
      * setter 必须有对应的 getter，getter 可以没有对应的 setter

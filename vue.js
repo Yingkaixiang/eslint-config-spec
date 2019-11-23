@@ -1,5 +1,4 @@
 module.exports = {
-  extends: ['./prettier.js'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     // 设置 js 的解析器为 babel-eslint
