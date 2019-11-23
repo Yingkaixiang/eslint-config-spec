@@ -14,7 +14,7 @@ module.exports = {
       globalReturn: false,
       // 开启全局严格模式
       impliedStrict: true,
-      jsx: true
+      jsx: true,
     },
 
     // ----------------
@@ -26,14 +26,14 @@ module.exports = {
     // 将不会开启实验特性的代码解析
     requireConfigFile: false,
     // 仅允许 import export 语句出现在模块的顶层
-    allowImportExportEverywhere: false
+    allowImportExportEverywhere: false,
   },
   env: {
     browser: true,
     node: true,
     commonjs: true,
-    es6: true
+    es6: true,
   },
   // 以当前目录为根目录，不再向上查找 .eslintrc.js
-  root: true
-}
+  root: true,
+};

@@ -249,5 +249,78 @@ module.exports = {
      * v-text 指令必须合法
      */
     'vue/valid-v-text': 'error',
+    /**
+     * 标签关闭时的 > 符号需要换行，单行可以不换行
+     */
+    'vue/html-closing-bracket-newline': [
+      'error',
+      {
+        singleline: 'never',
+        multiline: 'always',
+      },
+    ],
+    /**
+     * 结束标签的末尾 > 符号前面不能有空格
+     */
+    'vue/html-closing-bracket-spacing': 'error',
+    /**
+     * 标签必须有结束符号
+     */
+    'vue/html-end-tags': 'error',
+    /**
+     * html 标签使用双引号
+     */
+    'vue/html-quotes': ['error', 'double'],
+    /**
+     * 标签根据设置进行闭合
+     */
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          normal: 'never',
+          void: 'always',
+        },
+      },
+    ],
+    /**
+     * 当 html 标签上的属性大于一个时，需要进行换行
+     */
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 1,
+        multiline: {
+          max: 1,
+          allowFirstLine: false,
+        },
+      },
+    ],
+    /**
+     * html 标签内的文字需要进行换行
+     */
+    'vue/multiline-html-element-content-newline': [
+      'error',
+      {
+        ignoreWhenEmpty: true,
+        ignores: ['pre', 'textarea'],
+        allowEmptyLines: false,
+      },
+    ],
+    /**
+     * 模板差值变量左右需要有空格
+     */
+    'vue/mustache-interpolation-spacing': ['error', 'always'],
+    /**
+     * 不能出现多个空格
+     */
+    'vue/no-multi-spaces': 'error',
+
+    'prettier/prettier': [
+      'off',
+      {
+        printWidth: 80,
+      },
+    ],
   },
 };

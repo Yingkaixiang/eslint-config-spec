@@ -30,8 +30,6 @@
 }
 ```
 
-no-invalid-regexp
-
 ## 坑
 
 `eslint-plugin-vue` 以及 `vue-eslint-parser` 必须安装 5.x 版本，否则部分规则会出现校验错误。
