@@ -25,10 +25,12 @@ module.exports = {
      * 限制自定义组件的属性风格
      */
     'vue/attribute-hyphenation': 'off',
+
     /**
      * 标签属性必须按规则排序
      */
     'vue/attributes-order': 'error',
+
     /**
      * 变量名必须是 camelcase 风格的
      * @reason 很多 api 或文件名都不是 camelcase 风格的
@@ -270,18 +272,24 @@ module.exports = {
      * html 标签使用双引号
      */
     'vue/html-quotes': ['error', 'double'],
+
     /**
      * 标签根据设置进行闭合
+     * @new
      */
     'vue/html-self-closing': [
       'error',
       {
         html: {
-          normal: 'never',
-          void: 'always',
+          void: 'never',
+          normal: 'always',
+          component: 'always',
         },
+        'svg': "always",
+        'math': "always"
       },
     ],
+
     /**
      * 当 html 标签上的属性大于一个时，需要进行换行
      */
@@ -295,8 +303,10 @@ module.exports = {
         },
       },
     ],
+
     /**
-     * html 标签内的文字需要进行换行
+     * html 标签内的内容为多行时需要换行
+     * @new
      */
     'vue/multiline-html-element-content-newline': [
       'error',
@@ -306,6 +316,7 @@ module.exports = {
         allowEmptyLines: false,
       },
     ],
+
     /**
      * 模板差值变量左右需要有空格
      */
@@ -314,12 +325,5 @@ module.exports = {
      * 不能出现多个空格
      */
     'vue/no-multi-spaces': 'error',
-
-    'prettier/prettier': [
-      'off',
-      {
-        printWidth: 80,
-      },
-    ],
   },
 };

@@ -1,10 +1,29 @@
 module.exports = {
-  // eslint-config-prettier
   // 用于关闭所有会和 prettier 冲突的规则
-  extends: ['prettier'],
+  extends: ['plugin:prettier-vue/recommended'],
   plugins: ['prettier'],
+  settings: {
+    'prettier-vue': {
+      SFCBlocks: {
+        template: false,
+        script: true,
+        style: true,
+        customBlocks: {
+          docs: { lang: 'markdown' },
+          config: { lang: 'json' },
+          module: { lang: 'js' },
+          comments: false,
+        },
+      },
+      usePrettierrc: true,
+      fileInfoOptions: {
+        ignorePath: '.testignore',
+        withNodeModules: false,
+      },
+    },
+  },
   rules: {
-    'prettier/prettier': [
+    'prettier-vue/prettier': [
       'error',
       {
         // 每行最多 80 个字符
