@@ -1,6 +1,6 @@
 # eslint-config-team-spec
 
-![版本](https://img.shields.io/badge/%40qtt%2Feslint--config--spec-v1.0.4-blue)
+![版本](https://img.shields.io/badge/eslint--config--team--spec-v1.0.4-blue)
 
 统一团队内部编码规范的 ESLint 标准规则集，目前支持 `js` 规则以及 `vue` 规则。基于 [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy) 修改。
 
@@ -15,7 +15,7 @@
 请先安装规则集。
 
 ```
-npm i @qtt/eslint-config-spce --save-dev
+npm i eslint-config-team-spce --save-dev
 ```
 
 ### 使用 JavaScript 规则
@@ -24,7 +24,7 @@ npm i @qtt/eslint-config-spce --save-dev
 
 ```js
 module.exports = {
-  extends: ['@qtt/eslint-config-spec']
+  extends: ['eslint-config-team-spec']
   // ... 自定义配置
 }
 ```
@@ -36,8 +36,8 @@ module.exports = {
 ```js
 module.exports = {
   extends: [
-    '@qtt/eslint-config-spec',
-    '@qtt/eslint-config-spec/prettier',
+    'eslint-config-team-spec',
+    'eslint-config-team-spec/prettier',
   ]
   // ... 自定义配置
 }
@@ -56,10 +56,10 @@ module.exports = {
 ```js
 module.exports = {
   extends: [
-    '@qtt/eslint-config-spec',
+    'eslint-config-team-spec',
     // 如果需要 prettier
-    '@qtt/eslint-config-spec/prettier',
-    '@qtt/eslint-config-spec/vue',
+    'eslint-config-team-spec/prettier',
+    'eslint-config-team-spec/vue',
   ]
   // ... 自定义配置
 }
