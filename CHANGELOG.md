@@ -1,3 +1,6 @@
+* v1.0.4
+  * 修复 `attribute-hyphenation` 测试规则错误的问题
+
 * v1.0.3
   * 修复 `prettier` 规则和 `vue` 规则冲突的问题
 

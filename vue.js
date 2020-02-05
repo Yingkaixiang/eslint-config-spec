@@ -5,7 +5,7 @@ module.exports = {
     // https://github.com/mysticatea/vue-eslint-parser#-options
     parser: 'babel-eslint',
     ecmaVersion: 2019,
-    // ECMAScript modules 模式
+    // esm 模式
     sourceType: 'module',
     ecmaFeatures: {
       // 不允许 return 语句出现在 global 环境下
@@ -23,11 +23,20 @@ module.exports = {
   rules: {
     /**
      * 限制自定义组件的属性风格
+     * 
+     * @recommended x
+     * @fix
+     * 
+     * @desc
+     * 采用驼峰式便于以后将组建迁移到 React 或其他框架
      */
-    'vue/attribute-hyphenation': 'off',
+    "vue/attribute-hyphenation": ["error", "never", []],
 
     /**
      * 标签属性必须按规则排序
+     * 
+     * @recommended
+     * @fix
      */
     'vue/attributes-order': 'error',
 

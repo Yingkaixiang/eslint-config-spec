@@ -1,3 +1,3 @@
 <template>
-  <MyComponent myProp="prop" />
+  <MyComponent my-prop="prop" />
 </template>

@@ -2,7 +2,13 @@
 
 ![版本](https://img.shields.io/badge/%40qtt%2Feslint--config--spec-v1.0.3-blue)
 
-统一团队内部编码规范的 ESLint 标准规则集，目前支持 `js` 规则以及 `vue` 规则。
+统一团队内部编码规范的 ESLint 标准规则集，目前支持 `js` 规则以及 `vue` 规则。基于 [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy) 修改。
+
+## 注释解释
+
+* `@recommended` 表示当前规则在官方基础规则中已包含，如果自定义规则和推荐规则不同则会加上 `x` 标识。
+* `@fix` 表示可以被 eslint 自动修复。
+* `@desc` 表示对于当前规则功能和制定的背景说明。
 
 ## 如何使用
 
@@ -85,3 +91,7 @@ module.exports = {
   "vetur.validation.template": false,
 }
 ```
+
+## 本地调试
+
+请在 `VSCode` 中安装 `eslint` 插件以及 `prettier` 插件。
