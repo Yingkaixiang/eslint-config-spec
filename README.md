@@ -1,8 +1,6 @@
 # eslint-config-team-spec
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Yingkaixiang/eslint-config-team-spec.svg)](https://greenkeeper.io/)
-
-![版本](https://img.shields.io/badge/eslint--config--team--spec-v1.0.5-blue)
+![版本](https://img.shields.io/badge/eslint--config--team--spec-v1.0.5-blue) [![Greenkeeper badge](https://badges.greenkeeper.io/Yingkaixiang/eslint-config-team-spec.svg)](https://greenkeeper.io/)
 
 统一团队内部编码规范的 ESLint 标准规则集，目前支持 `js` 规则以及 `vue` 规则。基于 [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy) 修改。
 
