@@ -30,7 +30,7 @@ module.exports = {
      * @desc
      * 采用驼峰式便于以后将组建迁移到 React 或其他框架
      */
-    "vue/attribute-hyphenation": ["error", "never", []],
+    "vue/attribute-hyphenation": ["error", "never"],
 
     /**
      * 标签属性必须按规则排序
