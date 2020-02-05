@@ -4,7 +4,9 @@
   "description": "适用于团队的 ESLint 规则规范",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"test for travis CI\""
+    "test": "run-s eslint prettier",
+    "eslint": "eslint --ext .js,.vue --ignore-pattern \"bad.*\" test",
+    "prettier": "prettier -l \"./test/prettier/*\""
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-prettier-vue": "^2.0.2",
     "eslint-plugin-vue": "^6.0.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "vue-eslint-parser": "^7.0.0"
   },
