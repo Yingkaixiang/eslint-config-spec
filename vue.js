@@ -157,8 +157,11 @@ module.exports = {
     'vue/require-default-prop': 'error',
     /**
      * 禁止手动 export default
+     * 
+     * @desc
+     * 使用 typescript 时需要手动导出
      */
-    'vue/require-direct-export': 'error',
+    'vue/require-direct-export': 'off',
     /**
      * props 的取值必须是构造函数
      */
