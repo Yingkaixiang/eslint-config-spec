@@ -337,5 +337,10 @@ module.exports = {
      * 不能出现多个空格
      */
     'vue/no-multi-spaces': 'error',
+
+    /**
+     * 在 template 中强制使用两格缩进
+     */
+    'vue/html-indent': ['error', 2],
   },
 };
