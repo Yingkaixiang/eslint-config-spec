@@ -1,3 +1,6 @@
+* v1.0.7
+  * 新增 `vue/html-indent` 规则修复 `template` 的缩进问题。
+
 * v1.0.6
   * 关闭 `vue/require-direct-export` 规则。
 
