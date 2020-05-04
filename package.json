@@ -24,7 +24,7 @@
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "commitizen": "^4.0.3",
+    "commitizen": "^4.1.0",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
